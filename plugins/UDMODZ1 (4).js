@@ -1787,7 +1787,7 @@ const video = data.result[0];
 cmd({
     pattern: "owner",
     react: "🛡️", // Reaction emoji when the command is triggered
-    alias: "MR DILA",
+    alias: "MR ",
     desc: "Get owner number",
     category: "main",
     filename: __filename
@@ -1795,7 +1795,7 @@ cmd({
 async (conn, mek, m, { from }) => {
     try {
         // Owner's contact info
-        const ownerNumber = '+9478800891'; // Replace this with the actual owner number
+        const ownerNumber = '+94788008391'; // Replace this with the actual owner number
         const ownerName = 'MR '; // Replace this with the owner's name
         const organization = 'DILA 📍'; // Optional: replace with the owner's organization
 
@@ -1819,7 +1819,7 @@ async (conn, mek, m, { from }) => {
         await conn.sendMessage(from, {
             text: `This is the owner's contact: ${ownerName}`,
             contextInfo: {
-                mentionedJid: [ownerNumber.replace('+94760224138') + '+94760224138@s.whatsapp.net'], // Mention the owner
+                mentionedJid: [ownerNumber.replace('+94788008391') + '+94788008391@s.whatsapp.net'], // Mention the owner
                 quotedMessageId: sentVCard.key.id // Reference the vCard message
             }
         }, { quoted: mek });
